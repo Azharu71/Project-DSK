@@ -48,8 +48,9 @@ void posisi(int A, int B){
 //Fungsi perhitungan arus pada solar panel
 float volt(){
   int value = analogRead(solPan);
-  float vSolpan = (value / 4095.0) * 5;
-  return vSolpan;
+  float vSolpan = value ( 5 / 4095.0);
+  float v = vSolpan * 2.0;
+  return v;
 }
 
 
